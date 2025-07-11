@@ -24,7 +24,7 @@
 </ul>
 <h2> Como acessar o Projeto</h2>
 <p>Para visualizar e testar o projeto, basta clicar no link a baixo.Não é necessário configurar nenhum servidor local.</p>
-<a href="https://victtorh.github.io/Conversor-moeda/">Link site</a>
+<a href="https://victtorh.github.io/Conversor-moeda/" target="_blank">Link site</a>
 <h2>Contribuição</h2>
 <p>Sinta-se à vontade para explorar o código, sugerir melhorias ou reportar problemas. Este projeto é um reflexo do aprendizado e estou aberto a <b>feedbacks!</b></p>
 
