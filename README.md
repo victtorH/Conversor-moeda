@@ -8,7 +8,7 @@
 É importante notar que, para manter a simplicidade e focar nas tecnologias mencionadas,<b>não utilizei nenhuma API de conversão em tempo real</b>. As taxas de câmbio são fixas, baseadas nos valores do dia<b> 11 de julho de 2025.</b></p>
 <br>
 <div style="display: flex;">
-<img style="width:400px; height:300px;" src="https://github.com/user-attachments/assets/ba6b2505-0325-4e85-b9b7-585a286ecfb7"> <img style="width:200px height:300px;" src="https://github.com/user-attachments/assets/9f74416e-d278-4c94-8f4a-05963ec1b428"/>
+<img style="height:300px;" src="https://github.com/user-attachments/assets/ba6b2505-0325-4e85-b9b7-585a286ecfb7"/> <img style="height:300px;" src="https://github.com/user-attachments/assets/9f74416e-d278-4c94-8f4a-05963ec1b428"/>
 </div>
 <br>
 <h2>Taxa de cambio 11/07/2025</h2>
