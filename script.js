@@ -16,11 +16,11 @@ converter.addEventListener('click',( )=>{
       function NovoPais(Moeda, preco){
         this.Moeda = Moeda;
         this.preco = preco;
-        this.convertendo = ( CotaUSA, CotaBR, CotaBit, CotaING)=>{
+        this.convertendo = ( CotaUSA, CotaBR, CotaBTC, CotaGBP)=>{
             Resum =  Math.ceil(preco * CotaUSA)
             Resdois = Math.ceil(preco * CotaBR)
-            Restres = Math.ceil(preco * CotaBit)
-            Resqua = Math.ceil(preco * CotaING)
+            Restres = Math.ceil(preco * CotaBTC)
+            Resqua = Math.ceil(preco * CotaGBP)
                 if(Pais2.value == USA.Moeda){
                     PrimeiroValor.innerHTML = `R$${Valor.value}`
                     Resultado.innerHTML = `R$${Resum}`;
