@@ -1,0 +1,48 @@
+@media (max-width: 900px) {
+   section{
+    height: auto;
+    flex-direction: column;
+   }
+
+   .logo-site{
+    position: static;
+    margin: 45px 0px;
+   }
+   .tabela{
+      width: 100vw;
+      box-shadow: none;
+      border-radius: 0px;
+       margin: 0px;
+          table{
+      width: 98%;
+      margin: 0px;
+      font-size: 13px;
+    }
+   }
+   #content{
+    width: 100%;
+    border-radius: 0px;
+    margin: 0px;
+
+
+   }
+}
+@media (max-width: 400px) {
+   .logo-site{
+      width: 70%;
+   }
+   .tabela{
+      width: 100vw;
+      box-shadow: none;
+      border-radius: 0px;
+       margin: 0px;
+          table{
+      width: 98%;
+      margin: 0px;
+      font-size: 11px;
+      th{
+        padding: 1px;
+      }
+    }
+   }
+}

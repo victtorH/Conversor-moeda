@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Conversor Real</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="responsive.css" media="screen">
+
+    <link rel="stylesheet" href="responsive.css" media="screen" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  </head>
+  <body>
+    <main>
+      <section>
+        <div class="conteinerUm">
+          <img src="assets/logo 1.png" alt="logo-site" class="logo-site" />
+          <div class="tabela">
+            <div class="geral">
+             <h2>Taxa</h2>
+             <p>dia: 10/7/2025</p>
+              <table>
+                <tr><th> </th><th>Para Dolar </th><th>Para Real</th><th>Para Bitcoin</th><th>Para Libra</th>  </tr>
+                <tr><th>Dolar</th><td>1</td><td>5,53</td> <td>0,0000086</td><td>0,74</td></tr>
+                <tr><th>Real</th><td>0.18</td><td>1</td> <td>0.0000016</td><td>0.13</td></tr>
+                <tr><th>Bitcoin</th><td>116190.50</td><td>642835.37</td> <td>1</td><td>85709.28</td></tr>
+                <tr><th>Libra</th><td>1.36</td><td>7.50</td> <td>0.000012</td><td>1</td></tr>
+          
+              </table>
+            </div>
+          </div>
+        </div>
+        
+        <div id="content">
+          <div class="content-text">
+           <label for="valores">
+
+              <p>Converte <span>De</span></p>
+              <select name="valores" id="De">
+                <option value="Real">Real</option>
+                <option value="Dolar">Dolar</option>
+               <option value="Bitcoin">Bitcoin</option>
+                <option value="Libra">Libra</option>
+              </select>
+         
+           
+              <p>Converte <span>Para</span></p>
+              <select name="valores" id="Para">
+                <option value="Dolar">Dolar</option>
+                <option value="Real">Real</option>
+                <option value="Bitcoin">Bitcoin</option>
+                <option value="Libra">Libra</option>
+                
+              </select>
+         
+           </label>
+              <p>valor</p>
+              <input type="number" class="valores"   placeholder="valor" />
+            <button class="converter">Converter</button>
+          </div>
+          <div class="content-value">
+            <img src="assets/brasil 2.png" alt="Foto-convertendo" class="fotopais" />
+            <p class="PaisUm">Brasil</p>
+            <p class="dinheiro NValor">R$0</p>
+            <img src="assets/estados-unidos (1) 1.png" alt="Foto-convertida" class="fotopais" />
+            <p class="PaisDois">USA</p>
+            <p class="dinheiro Resultado">R$0</p>
+          </div>
+        </div>
+        
+      </section>
+    </main>
+  </body>
+  <script src="script.js"></script>
+</html>
