@@ -9,6 +9,8 @@ let PrimeiroValor = document.querySelector('.NValor')
 let fotopais = document.querySelectorAll('.fotopais')
 
 let converter = document.querySelector('.converter')
+
+
 converter.addEventListener('click',( )=>{
     if(Pais1.value == Pais2.value){
         alert('[ERRO]Não é possivel fazer conversão com a mesma moeda')
@@ -17,28 +19,30 @@ converter.addEventListener('click',( )=>{
         this.Moeda = Moeda;
         this.preco = preco;
         this.convertendo = ( CotaUSA, CotaBR, CotaBTC, CotaGBP)=>{
-            Resum =  Math.ceil(preco * CotaUSA)
-            Resdois = Math.ceil(preco * CotaBR)
-            Restres = Math.ceil(preco * CotaBTC)
-            Resqua = Math.ceil(preco * CotaGBP)
+            Resum =  preco * CotaUSA
+            Resdois = preco * CotaBR
+            Restres = preco * CotaBTC
+            Resqua = preco * CotaGBP
+                   
+
                 if(Pais2.value == USA.Moeda){
-                    PrimeiroValor.innerHTML = `R$${Valor.value}`
-                    Resultado.innerHTML = `R$${Resum}`;
-                    fotopais[1].src = 'assets\estados-unidos (1) 1.png'
+                    PrimeiroValor.innerHTML = `R$${Number(Valor.value).toFixed(2)}`
+                    Resultado.innerHTML = `R$${Resum.toFixed(2)}`;
+                    fotopais[1].src = 'assets/estados-unidos (1) 1.png'
                     PaisDois.innerHTML = 'USA'
                 }else if(Pais2.value == Brasil.Moeda){
-                    PrimeiroValor.innerHTML = `R$${Valor.value}`
-                    Resultado.innerHTML =`R$${Resdois}`
+                    PrimeiroValor.innerHTML = `R$${Number(Valor.value).toFixed(2)}`
+                    Resultado.innerHTML =`R$${Resdois.toFixed(2)}`
                     fotopais[1].src = 'assets/brasil 2.png'
                     PaisDois.innerHTML = 'Brasil'
                 }else if(Pais2.value == Biticoin.Moeda ){
-                    PrimeiroValor.innerHTML = `R$${Valor.value}`
-                    Resultado.innerHTML = `R$${Restres}`
+                    PrimeiroValor.innerHTML = `R$${Number(Valor.value).toFixed(2)}`
+                    Resultado.innerHTML = `R$${Restres.toFixed(2)}`
                     fotopais[1].src = 'assets/bitcoin 1.png'
                     PaisDois.innerHTML = 'Bitcoin'
                 }else if(Pais2.value == Inglaterra.Moeda){
-                    PrimeiroValor.innerHTML = `R$${Valor.value}`
-                    Resultado.innerHTML = `R$${Resqua}`
+                    PrimeiroValor.innerHTML = `R$${Number(Valor.value).toFixed(2)}`
+                    Resultado.innerHTML = `R$${Resqua.toFixed(2)}`
                      fotopais[1].src = 'assets/libra 1.png'
                      PaisDois.innerHTML = 'Inglaterra'
                 }
@@ -49,7 +53,7 @@ converter.addEventListener('click',( )=>{
       let Brasil = new NovoPais('Real',Valor.value)
      let Biticoin = new NovoPais('Bitcoin',Valor.value)
       let Inglaterra = new NovoPais('Libra',Valor.value)
-
+    
       if(Pais1.value == USA.Moeda){
         USA.convertendo(null,5.53,0.0000086,0.74) 
         fotopais[0].src = 'assets/estados-unidos (1) 1.png'
